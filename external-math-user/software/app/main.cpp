@@ -1,6 +1,8 @@
 #include "mymath.h"
-
+#include <cstdio>
 int main(int i, char** ii)
 {
-    return 1;
+    double iii = MathFunctions::sqrt(i);
+    printf("%d", iii);
+    return iii;
 }
