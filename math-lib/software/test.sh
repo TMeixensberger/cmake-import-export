@@ -14,7 +14,7 @@ if [[ ! -d "$outputDir" ]]; then
 
 fi
 
-cmake .. -B $buildDir -DCMAKE_INSTALL_PREFIX:PATH=$exportDir
+cmake . -B $buildDir -DCMAKE_INSTALL_PREFIX:PATH=$exportDir
 
 cmake -DCMAKE_BUILD_TYPE=Debug $buildDir
 cmake --build $buildDir --config Debug --target install
