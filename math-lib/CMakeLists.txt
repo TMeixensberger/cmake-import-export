@@ -12,7 +12,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_library(MathLib STATIC math.h math.cpp)
+add_library(MathLib STATIC mymath.h mymath.cpp)
 
 target_include_directories(MathLib
                            PUBLIC
@@ -37,7 +37,7 @@ endif()
 #message(lol${CMAKE_BUILD_TYPE})
 message(lol${COMPILE_PDB_NAME})
 
-install(FILES math.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES mymath.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 install(EXPORT MathLibTargets
         FILE MathLibTargets.cmake
