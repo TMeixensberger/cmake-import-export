@@ -1,6 +1,13 @@
 outputDir="../output"
 buildDir="${outputDir}/build"
-exportDir="${outputDir}/export"
+exportDir="../export"
+
+echo "------------"
+echo $outputDir
+echo $buildDir
+echo $exportDir 
+echo "------------"
+
 if [[ ! -d "$outputDir" ]]; then
 
   mkdir $outputDir

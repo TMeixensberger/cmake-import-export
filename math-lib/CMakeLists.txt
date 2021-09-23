@@ -40,7 +40,7 @@ message(lol${COMPILE_PDB_NAME})
 install(FILES mymath.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 install(EXPORT MathLibTargets
-        FILE MathLibTargets.cmake
+        FILE MathLibConfig.cmake
         NAMESPACE MathLib::
         DESTINATION ${CMAKE_INSTALL_BINDIR}/cmake
 )
