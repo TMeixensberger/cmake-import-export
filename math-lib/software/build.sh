@@ -1,4 +1,4 @@
-outputDir="../output"
+outputDir=".."
 buildDir="${outputDir}/build"
 exportDir="../export"
 
