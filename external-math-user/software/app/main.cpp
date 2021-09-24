@@ -1,4 +1,4 @@
-#include "mymath.h"
+#include "mathlib/mymath.h"
 #include <cstdio>
 int main(int i, char** ii)
 {

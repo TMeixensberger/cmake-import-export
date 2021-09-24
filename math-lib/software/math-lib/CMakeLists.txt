@@ -1,6 +1,6 @@
 
 
-add_library(MathLib STATIC mymath.h mymath.cpp)
+add_library(MathLib STATIC mathlib/mymath.h mathlib/mymath.cpp)
 
 target_include_directories(MathLib
                            PUBLIC
@@ -25,7 +25,7 @@ endif()
 #message(lol${CMAKE_BUILD_TYPE})
 message(lol${COMPILE_PDB_NAME})
 
-install(FILES mymath.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES mathlib/mymath.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/mathlib)
 
 install(EXPORT MathLibTargets
         FILE MathLibConfig.cmake
